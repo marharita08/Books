@@ -34,7 +34,7 @@ To run the application locally, follow these steps:
     - Configure the following properties in the `application.properties` file:
 
       | Property                            | Description                                                 |
-           |-------------------------------------|-------------------------------------------------------------|
+      |-------------------------------------|-------------------------------------------------------------|
       | spring.datasource.url               | The URL of the database.                                    |
       | spring.datasource.username          | The username for the database.                              |
       | spring.datasource.password          | The password for the database.                              |
