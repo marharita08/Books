@@ -75,7 +75,7 @@ Feel free to explore the application and make use of its features to enhance you
 ## Screenshots
 
 <div align="center">
-  <img src="images/Screenshot_1.png" alt="Catalog" width="300">
-  <img src="images/Screenshot_2.png" alt="Edit review" width="300">
-  <img src="images/Screenshot_3.png" alt="Search" width="300">
+  <img src="images/Screenshot_1.png" alt="Catalog" width="250">
+  <img src="images/Screenshot_2.png" alt="Edit review" width="250">
+  <img src="images/Screenshot_3.png" alt="Search" width="250">
 </div>
