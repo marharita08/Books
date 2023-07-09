@@ -71,3 +71,11 @@ Upon launching the application, users can create a new account or log in with th
 - Creating and managing custom book lists
 
 Feel free to explore the application and make use of its features to enhance your reading experience!
+
+## Screenshots
+
+<div align="center">
+  <img src="images/Screenshot_1.png" alt="Catalog" width="200">
+  <img src="images/Screenshot_2.png" alt="Edit review" width="200">
+  <img src="images/Screenshot_3.png" alt="Search" width="200">
+</div>
