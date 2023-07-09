@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MatchParentWrapContentStyle">
+
+    <ImageView
+        android:id="@+id/dialogBookCover"
+        style="@style/DialogBookCoverStyle"
+        android:layout_marginStart="@dimen/dialog_margin_1"
+        android:layout_marginTop="@dimen/dialog_margin_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_photo_black_48dp" />
+
+    <TextView
+        android:id="@+id/dialogBookTitle"
+        style="@style/TextStyle"
+        android:layout_marginStart="@dimen/dialog_margin_1"
+        app:layout_constraintStart_toEndOf="@+id/dialogBookCover"
+        app:layout_constraintTop_toTopOf="@+id/dialogBookCover"
+        app:layout_constraintBottom_toBottomOf="@+id/dialogBookCover" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        style="@style/WrapContentStyle"
+        android:layout_marginStart="@dimen/dialog_margin_1"
+        android:layout_marginTop="@dimen/dialog_margin_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialogBookCover" />
+
+    <EditText
+        android:id="@+id/reviewTextField"
+        style="@style/DialogReviewStyle"
+        android:layout_marginTop="@dimen/dialog_margin_2"
+        android:hint="@string/review_hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

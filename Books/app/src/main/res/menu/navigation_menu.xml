@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText">
+
+    <item
+        android:id="@+id/nav_search"
+        android:icon="@drawable/ic_nav_menu_search"
+        android:title="@string/search" />
+
+    <item
+        android:id="@+id/nav_catalog"
+        android:icon="@drawable/ic_nav_menu_catalog"
+        android:title="@string/catalog" />
+
+    <item
+        android:id="@+id/nav_wishlist"
+        android:icon="@drawable/ic_nav_menu_wishlist"
+        android:title="@string/wishlist" />
+
+    <item
+        android:id="@+id/nav_reading"
+        android:icon="@drawable/ic_nav_menu_reading"
+        android:title="@string/reading" />
+
+    <item
+        android:id="@+id/nav_already_read"
+        android:icon="@drawable/ic_nav_menu_already_read"
+        android:title="@string/already_read" />
+
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_nav_menu_profile"
+        android:title="@string/profile" />
+
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/ic_nav_menu_logout"
+        android:title="@string/logout"/>
+
+</menu>

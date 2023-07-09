@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Books</string>
+
+    <!-- profile labels -->
+    <string name="username">Username</string>
+    <string name="full_name">Full Name</string>
+    <string name="password">Password</string>
+
+    <!-- catalog modes -->
+    <string name="genre">Genre</string>
+    <string name="author">Author</string>
+
+    <!-- book labels -->
+    <string name="average_rating">Average rating</string>
+    <string name="my_rating">My rating</string>
+    <string name="description">Description</string>
+    <string name="genres">Genres</string>
+    <string name="authors">Authors</string>
+    <string name="page_amount">Amount of pages</string>
+    <string name="related_books">Related books</string>
+    <string name="reviews">Reviews</string>
+
+    <!-- add/edit review -->
+    <string name="review_hint">Write your review…</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- login/logout headers -->
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+
+    <!-- nav menu/headers -->
+    <string name="catalog">Catalog</string>
+    <string name="profile">Profile</string>
+    <string name="logout">Logout</string>
+    <string name="search">Search</string>
+    <string name="wishlist">Wishlist</string>
+    <string name="already_read">Already read</string>
+    <string name="reading">Reading</string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+
+    <!-- book menu -->
+    <string name="add_to_wishlist">Add to wishlist</string>
+    <string name="add_to_already_read">Add to already read</string>
+    <string name="add_to_reading">Add to reading</string>
+    <string name="remove_from_wishlist">Remove from wishlist</string>
+    <string name="remove_from_reading">Remove from reading</string>
+    <string name="remove_from_already_read">Remove from already read</string>
+    <string name="edit_review">Edit review</string>
+
+    <!-- success messages -->
+    <string name="image_uploaded_message">Image was uploaded on server</string>
+    <string name="user_updated_message">Your data was updated</string>
+    <string name="wishlist_added_message">Book was added to wishlist</string>
+    <string name="reading_added_message">Book was added to reading</string>
+    <string name="already_read_added_message">Book was added to already read</string>
+    <string name="review_edited_message">Your review was updated</string>
+    <string name="removed_from_wishlist">Book was removed from wishlist</string>
+    <string name="removed_from_reading">Book was removed from reading</string>
+    <string name="removed_from_already_read">Book was removed from already read</string>
+
+    <!-- error messages -->
+    <string name="error_message">Something went wrong</string>
+    <string name="username_taken">Username already taken</string>
+</resources>

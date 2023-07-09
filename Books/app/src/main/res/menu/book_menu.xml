@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/addToWishlist"
+        android:title="@string/add_to_wishlist" />
+
+    <item
+        android:id="@+id/deleteFromWishlist"
+        android:title="@string/remove_from_wishlist" />
+
+    <item
+        android:id="@+id/addToReading"
+        android:title="@string/add_to_reading" />
+
+    <item
+        android:id="@+id/deleteFromReading"
+        android:title="@string/remove_from_reading" />
+
+    <item
+        android:id="@+id/addToAlreadyRead"
+        android:title="@string/add_to_already_read" />
+
+    <item
+        android:id="@+id/deleteFromAlreadyRead"
+        android:title="@string/remove_from_already_read" />
+
+    <item
+        android:id="@+id/editReview"
+        android:title="@string/edit_review" />
+
+</menu>

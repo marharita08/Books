@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/UserScrollViewStyle"
+    tools:context=".user_activity.UserActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/MatchParentWrapContentStyle"
+        android:padding="@dimen/user_padding">
+
+        <ImageView
+            android:id="@+id/avatar"
+            style="@style/ProfileAvatarStyle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            style="@style/WrapContentStyle"
+            android:layout_marginTop="@dimen/user_margin_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/avatar"
+            app:srcCompat="@android:drawable/ic_menu_camera" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/usernameInputLayout"
+            style="@style/TextInputStyle"
+            android:layout_marginTop="@dimen/user_margin_3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/avatar">
+
+            <EditText
+                android:id="@+id/usernameField"
+                style="@style/MatchParentWrapContentStyle"
+                android:hint="@string/username"
+                android:inputType="textPersonName"
+                android:enabled="false"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fullNameInputLayout"
+            style="@style/TextInputStyle"
+            android:layout_marginTop="@dimen/user_margin_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/usernameInputLayout">
+
+            <EditText
+                android:id="@+id/fullNameField"
+                style="@style/MatchParentWrapContentStyle"
+                android:hint="@string/full_name"
+                android:inputType="textPersonName" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordInputLayout"
+            style="@style/TextInputStyle"
+            android:layout_marginTop="@dimen/user_margin_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fullNameInputLayout"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/passwordField"
+                style="@style/MatchParentWrapContentStyle"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/save"
+            style="@style/WrapContentStyle"
+            android:layout_marginTop="@dimen/user_margin_3"
+            android:text="@string/save"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passwordInputLayout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

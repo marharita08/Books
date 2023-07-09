@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_input_width">400dp</dimen>
+    <dimen name="book_cover_photo_width">250dp</dimen>
+    <!-- book card dimensions -->
+    <dimen name="book_card_photo_with">130dp</dimen>
+    <dimen name="book_card_photo_height">180dp</dimen>
+    <dimen name="book_card_title_font_size">13sp</dimen>
+</resources>

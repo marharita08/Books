@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/WrapContentStyle"
+    android:orientation="vertical"
+    android:id="@+id/bookListLinearLayout">
+
+    <TextView
+        android:id="@+id/groupName"
+        style="@style/Header1Style"
+        android:layout_margin="@dimen/book_list_margin" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/bookList"
+        style="@style/BookListStyle" />
+
+    <View
+        android:id="@+id/divider"
+        style="@style/DividerStyle"
+        android:background="?android:attr/listDivider" />
+
+</LinearLayout>

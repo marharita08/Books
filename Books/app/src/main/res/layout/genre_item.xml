@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/WrapContentStyle"
+    android:layout_margin="@dimen/genre_margin"
+    app:cardBackgroundColor="@color/light_grey"
+    app:cardCornerRadius="@dimen/genre_corner_radius"
+    app:contentPadding="@dimen/genre_padding">
+
+    <TextView
+        android:id="@+id/genre"
+        style="@style/WrapContentStyle"/>
+
+</androidx.cardview.widget.CardView>

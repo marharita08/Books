@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MatchParentWrapContentStyle"
+    tools:context=".search_activity.SearchActivity">
+
+    <ScrollView
+        style="@style/ColumnStyle"
+        android:layout_weight="@integer/filters_weight"
+        android:padding="@dimen/search_padding">
+
+        <LinearLayout
+            style="@style/MatchParentWrapContentStyle"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Header3Style"
+                android:text="@string/genres" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/searchGenres"
+                style="@style/MatchParentWrapContentStyle" />
+
+            <TextView
+                style="@style/Header3Style"
+                android:text="@string/authors" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/searchAuthors"
+                style="@style/MatchParentWrapContentStyle" />
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/searchResults"
+        style="@style/ColumnStyle"
+        android:layout_weight="@integer/books_weight"
+        android:padding="@dimen/search_padding"/>
+
+</LinearLayout>

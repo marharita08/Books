@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MatchParentWrapContentStyle"
+    tools:context=".book_activity.BookActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/MatchParentWrapContentStyle"
+        android:padding="@dimen/book_padding_2">
+
+        <ImageView
+            android:id="@+id/bookCoverPhoto"
+            style="@style/BookCoverPhotoStyle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/bookTitle"
+            style="@style/Header1Style"
+            android:layout_marginTop="@dimen/book_margin_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bookCoverPhoto" />
+
+        <LinearLayout
+            android:id="@+id/ratingLinearLayout"
+            style="@style/MatchParentWrapContentStyle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bookTitle">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                style="@style/ColumnStyle"
+                android:layout_weight="@integer/rating_column_weight">
+
+                <TextView
+                    android:id="@+id/averageRatingLabel"
+                    style="@style/Header4Style"
+                    android:layout_marginTop="@dimen/book_margin_2"
+                    android:text="@string/average_rating"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/averageRating"
+                    style="@style/Header4Style"
+                    android:layout_marginTop="@dimen/book_margin_1"
+                    app:layout_constraintTop_toBottomOf="@+id/averageRatingLabel"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:layout_editor_absoluteX="62dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                style="@style/ColumnStyle"
+                android:layout_weight="@integer/rating_column_weight">
+
+                <TextView
+                    android:id="@+id/myRatingLabel"
+                    style="@style/Header4Style"
+                    android:layout_marginTop="@dimen/book_margin_2"
+                    android:text="@string/my_rating"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/myRating"
+                    style="@style/Header4Style"
+                    android:layout_marginTop="@dimen/book_margin_1"
+                    app:layout_constraintTop_toBottomOf="@+id/myRatingLabel"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/descriptionLabel"
+            style="@style/Header2Style"
+            android:layout_marginTop="@dimen/book_margin_2"
+            android:text="@string/description"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ratingLinearLayout" />
+
+        <TextView
+            android:id="@+id/description"
+            style="@style/TextStyle"
+            android:layout_marginTop="@dimen/book_margin_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/descriptionLabel" />
+
+        <TextView
+            android:id="@+id/pageAmountLabel"
+            style="@style/Header2Style"
+            android:layout_marginTop="@dimen/book_margin_2"
+            android:text="@string/page_amount"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/description" />
+
+        <TextView
+            android:id="@+id/pageAmount"
+            style="@style/TextStyle"
+            android:layout_marginTop="@dimen/book_margin_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pageAmountLabel" />
+
+        <TextView
+            android:id="@+id/genresLabel"
+            style="@style/Header2Style"
+            android:layout_marginTop="@dimen/book_margin_2"
+            android:text="@string/genres"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pageAmount" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/genresRecyclerView"
+            style="@style/MatchParentWrapContentStyle"
+            android:layout_marginTop="@dimen/book_margin_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/genresLabel" />
+
+        <TextView
+            android:id="@+id/authorsLabel"
+            style="@style/Header2Style"
+            android:layout_marginTop="@dimen/book_margin_2"
+            android:text="@string/authors"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/genresRecyclerView" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/authorsRecyclerView"
+            style="@style/MatchParentWrapContentStyle"
+            android:layout_marginTop="@dimen/book_margin_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/authorsLabel" />
+
+        <TextView
+            android:id="@+id/relatedBooksLabel"
+            style="@style/Header2Style"
+            android:layout_marginTop="@dimen/book_margin_2"
+            android:text="@string/related_books"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/authorsRecyclerView" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/relatedBooksRecyclerView"
+            style="@style/MatchParentStyle"
+            android:layout_marginTop="@dimen/book_margin_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relatedBooksLabel" />
+
+        <TextView
+            android:id="@+id/reviewsLabel"
+            style="@style/Header2Style"
+            android:layout_marginTop="@dimen/book_margin_2"
+            android:text="@string/reviews"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relatedBooksRecyclerView" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/reviewsRecyclerView"
+            style="@style/WrapContentStyle"
+            android:layout_marginTop="@dimen/book_margin_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/reviewsLabel" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

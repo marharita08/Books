@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/UserScrollViewStyle"
+    tools:context=".signup_activity.SignUpActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/MatchParentWrapContentStyle"
+        android:padding="@dimen/user_padding">
+
+        <TextView
+            android:id="@+id/signUpHeader"
+            style="@style/Header1Style"
+            android:text="@string/sign_up"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/signUpUsernameInputLayout"
+            style="@style/TextInputStyle"
+            android:layout_marginTop="@dimen/user_margin_3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signUpHeader">
+
+            <EditText
+                android:id="@+id/signUpUsername"
+                style="@style/MatchParentWrapContentStyle"
+                android:hint="@string/username"
+                android:inputType="textPersonName" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/signUpFullNameInputLayout"
+            style="@style/TextInputStyle"
+            android:layout_marginTop="@dimen/user_margin_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signUpUsernameInputLayout">
+
+            <EditText
+                android:id="@+id/signUpFullName"
+                style="@style/MatchParentWrapContentStyle"
+                android:hint="@string/full_name"
+                android:inputType="textPersonName" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/signUpPasswordInputLayout"
+            style="@style/TextInputStyle"
+            android:layout_marginTop="@dimen/user_margin_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signUpFullNameInputLayout"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/signUpPassword"
+                style="@style/MatchParentWrapContentStyle"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/signUpButton"
+            style="@style/WrapContentStyle"
+            android:layout_marginTop="@dimen/user_margin_3"
+            android:text="@string/sign_up"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signUpPasswordInputLayout" />
+
+        <TextView
+            android:id="@+id/toLogin"
+            style="@style/MoveToStyle"
+            android:layout_marginTop="@dimen/user_margin_2"
+            android:text="@string/login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signUpButton"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

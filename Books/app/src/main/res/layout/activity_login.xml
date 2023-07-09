@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/UserScrollViewStyle"
+    tools:context=".login_activity.LoginActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/MatchParentWrapContentStyle"
+        android:padding="@dimen/user_padding">
+
+        <TextView
+            android:id="@+id/loginHeader"
+            style="@style/Header1Style"
+            android:text="@string/login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/loginUsernameInputLayout"
+            style="@style/TextInputStyle"
+            android:layout_marginTop="@dimen/user_margin_3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/loginHeader">
+
+            <EditText
+                android:id="@+id/loginUsername"
+                style="@style/MatchParentWrapContentStyle"
+                android:hint="@string/username"
+                android:inputType="textPersonName" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/loginPasswordInputLayout"
+            style="@style/TextInputStyle"
+            android:layout_marginTop="@dimen/user_margin_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/loginUsernameInputLayout"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/loginPassword"
+                style="@style/MatchParentWrapContentStyle"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/loginButton"
+            style="@style/WrapContentStyle"
+            android:layout_marginTop="@dimen/user_margin_3"
+            android:text="@string/login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/loginPasswordInputLayout" />
+
+        <TextView
+            android:id="@+id/toSignUp"
+            style="@style/MoveToStyle"
+            android:layout_marginTop="@dimen/user_margin_2"
+            android:text="@string/sign_up"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/loginButton"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
