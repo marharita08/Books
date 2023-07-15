@@ -21,7 +21,8 @@ Welcome to the **Books** repository! This repository contains the code for an An
 Before running the **Books** application, make sure you have the following prerequisites:
 
 - Android Studio: Install the latest version of Android Studio, which can be downloaded from the [Android Studio website](https://developer.android.com/studio).
-- Java Development Kit (JDK): Make sure you have Java Development Kit (JDK) installed on your system. You can download the JDK from the [Oracle website](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html).
+- Java Development Kit (JDK): Make sure you have Java Development Kit (JDK) installed on your system. You can download the JDK from the [Oracle website](https://www.oracle.com/java/technologies/downloads/).
+- Maven: Ensure that you have Apache Maven installed. You can download and install Maven from the [Apache Maven website](https://maven.apache.org/download.cgi).
 - PostgreSQL: Set up a PostgreSQL database to store the book data. Make sure you have the necessary credentials and connection details for the database.
 - Google Cloud Platform (GCP) Account: To use the backend functionalities, you'll need a GCP account to create a project and set up the required services, such as Google Cloud Storage. Refer to the [Google Cloud Platform website](https://cloud.google.com/) for more information on getting started with GCP.
 - Google Cloud Storage Bucket: Create a bucket in Google Cloud Storage to store the uploaded files. You will need the name of the bucket to configure the backend application.
