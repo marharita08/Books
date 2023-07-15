@@ -8,8 +8,6 @@ Welcome to the **Books** repository! This repository contains the code for an An
 - Book Database: The application utilizes a book database to store information about various books.
 - Book Ratings: Users can rate books and provide reviews.
 - Book Lists: Users can create and manage custom lists of books based on their preferences.
-- Reading Progress: Users can track their reading progress for each book.
-- Recommendations: The application provides personalized book recommendations based on the user's reading history and preferences.
 
 ## Technologies Used
 
@@ -17,6 +15,18 @@ Welcome to the **Books** repository! This repository contains the code for an An
 - Java
 - Spring Boot
 - PostgreSQL
+
+## Prerequisites
+
+Before running the **Books** application, make sure you have the following prerequisites:
+
+- Android Studio: Install the latest version of Android Studio, which can be downloaded from the [Android Studio website](https://developer.android.com/studio).
+- Java Development Kit (JDK): Make sure you have Java Development Kit (JDK) installed on your system. You can download the JDK from the [Oracle website](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html).
+- PostgreSQL: Set up a PostgreSQL database to store the book data. Make sure you have the necessary credentials and connection details for the database.
+- Google Cloud Platform (GCP) Account: To use the backend functionalities, you'll need a GCP account to create a project and set up the required services, such as Google Cloud Storage. Refer to the [Google Cloud Platform website](https://cloud.google.com/) for more information on getting started with GCP.
+- Google Cloud Storage Bucket: Create a bucket in Google Cloud Storage to store the uploaded files. You will need the name of the bucket to configure the backend application.
+
+Ensure that all the prerequisites are met before proceeding with the installation and usage of the **Books** application.
 
 ## Installation
 
@@ -29,27 +39,26 @@ To run the application locally, follow these steps:
 3. Set up the backend:
     - Navigate to the `BooksAPI` directory: `cd Books/BooksAPI`.
     - Install the required dependencies: `./mvnw install`.
-    - Create a Google Cloud Storage bucket to store the uploaded files.
-    - Upload to the bucket default images for author, avatar and book cover.
+    - Upload to the GCP bucket default images for author, avatar and book cover.
     - Configure the following properties in the `application.properties` file:
 
-      | Property                            | Description                                                 |
-      |-------------------------------------|-------------------------------------------------------------|
-      | spring.datasource.url               | The URL of the database.                                    |
-      | spring.datasource.username          | The username for the database.                              |
-      | spring.datasource.password          | The password for the database.                              |
-      | spring.cloud.gcp.project-id         | The ID of your Google Cloud project.                        |
-      | spring.cloud.gcp.credentials.location | The location of the GCP credentials file.                   |
-      | gcp.bucket.name                     | The name of the Google Cloud Storage bucket.                |
+      | Property                                  | Description                                                 |
+      |-------------------------------------------|-------------------------------------------------------------|
+      | spring.datasource.url                     | The URL of the database.                                    |
+      | spring.datasource.username                | The username for the database.                              |
+      | spring.datasource.password                | The password for the database.                              |
+      | spring.cloud.gcp.project-id               | The ID of your Google Cloud project.                        |
+      | spring.cloud.gcp.credentials.location     | The location of the GCP credentials file.                   |
+      | gcp.bucket.name                           | The name of the Google Cloud Storage bucket.                |
       | spring.servlet.multipart.max-file-size    | The maximum file size for file uploads.                     |
       | spring.servlet.multipart.max-request-size | The maximum request size for file uploads.                  |
-      | books.app.jwtSecret                     | The secret key for JWT token generation and validation.     |
-      | books.app.jwtExpirationMs               | The expiration time (in milliseconds) for JWT tokens.       |
-      | default.image.author               | The name of uploaded default author image.                  |
-      | default.image.avatar               | The name of uploaded default avatar image.                  |
-      | default.image.book.cover               | The name of uploaded default book cover image.              |
-      | rapidapi.host               | Rapidapi host. Uses to fill database with test information. |
-      | rapidapi.key               | Rapidapi key. Uses to fill database with test information.  |
+      | books.app.jwtSecret                       | The secret key for JWT token generation and validation.     |
+      | books.app.jwtExpirationMs                 | The expiration time (in milliseconds) for JWT tokens.       |
+      | default.image.author                      | The name of uploaded default author image.                  |
+      | default.image.avatar                      | The name of uploaded default avatar image.                  |
+      | default.image.book.cover                  | The name of uploaded default book cover image.              |
+      | rapidapi.host                             | Rapidapi host. Uses to fill database with test information. |
+      | rapidapi.key                              | Rapidapi key. Uses to fill database with test information.  |
 
     - Start the backend server: `./mvnw spring-boot:run` or just run `run.cmd`.
     - To fill database with test information you can open url `http://backendurl:port/api?author=joanne&rowling` in your browser and specify backend url, port, and author's name. Books written by specified author will be added to database and it's covers will be uploaded to bucket. 
