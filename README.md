@@ -15,6 +15,7 @@ Welcome to the **Books** repository! This repository contains the code for an An
 - Java
 - Spring Boot
 - PostgreSQL
+- Google Storage
 
 ## Prerequisites
 
@@ -40,7 +41,7 @@ To run the application locally, follow these steps:
 3. Set up the backend:
     - Navigate to the `BooksAPI` directory: `cd Books/BooksAPI`.
     - Install the required dependencies: `./mvnw install`.
-    - Upload to the GCP bucket default images for author, avatar and book cover.
+    - Upload to the Google Storage bucket default images for author, avatar and book cover.
     - Configure the following properties in the `application.properties` file:
 
       | Property                                  | Description                                                 |
@@ -61,8 +62,8 @@ To run the application locally, follow these steps:
       | rapidapi.host                             | Rapidapi host. Uses to fill database with test information. |
       | rapidapi.key                              | Rapidapi key. Uses to fill database with test information.  |
 
-    - Start the backend server: `./mvnw spring-boot:run` or just run `run.cmd`.
-    - To fill database with test information you can open url `http://backendurl:port/api?author=joanne&rowling` in your browser and specify backend url, port, and author's name. Books written by specified author will be added to database and it's covers will be uploaded to bucket. 
+    - Start the backend server: `./mvnw spring-boot:run` or just run `run.cmd` or `run.sh` depending on your OS.
+    - To fill database with test information you can open url `backendurl:port/api?author=author` in your browser and specify backend url, port, and author's name. Books written by specified author will be added to database and it's covers will be uploaded to bucket. For example: `localhost:8080/api?author=joanne&rowling`. 
 
 4. Set up the Android application:
     - Open folder Books in Android Studio.
